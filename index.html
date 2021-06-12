@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Footbal manager</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <style>
+            table th {
+                border: 1px solid black;
+            }
+            table td {
+                border: 1px solid black;
+            }
+            input {
+                padding: 5px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+        </style>
+        <p>Create team</p>
+        <input id = "input_team-name" placeholder="Name team">
+        <input id = "input_team-rating" placeholder="rating team">
+        <input id = "input_team-schema" placeholder="schema team">
+        <input id = "input_team-defend" placeholder="defend team">
+        <input id = "input_team-control" placeholder="control team">
+        <input id = "input_team-attack" placeholder="attack team">
+        <input id = "input_team-color" placeholder="color team (#00000)"><br>
+        <button id = "enter">Save team</button>
+        <br>
+        <p style="border-bottom: 1px solid black;">Test game</p>
+        <p>Chelsea|124.8|3-5-2|25.5|27.5|25|#0039a3</p>
+        <p style="border-bottom: 1px solid black;">Man. City|93.8|3-5-2|25|15|31|#5993ff</p>
+        <input id ="all_data" placeholder="all_data" style="width: 500px;">
+        <button id = "done_save">Save</button>
+        <br>
+        <br>
+        <button class = "done">Start_game</button>
+		<button id = "UCL">Start_tournament</button>
+        <br>
+        <br>
+		<p style="border-bottom: 1px solid black;">Generate random tournament</p>
+		<input id = "rand_num" placeholder="amount of teams" style="width: 200px;"> 
+		<button id = "random">Ok</button>
+        <table>
+            <tbody id = "table_team">
+                <tr>
+                    <th>Название</th>
+                    <th>Рейтинг</th>
+                    <th>Схема</th>
+                    <th>Защита</th>
+                    <th>Контроль</th>
+                    <th>Атака</th>
+                    <th>Очки</th>
+                    <th>Победы</th>
+                    <th>Проигрыш</th>
+                    <th>Ничья</th>
+                    <th>Разница</th>
+                    <th>Игры</th>
+                    <th>Цвет команды</th>
+                <tr>
+            </tbody>
+        </table>
+        <p>Результаты игр</p>
+        <div id = "work_place">
+            
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script src="js.js"></script>
+    </body>
+</html>
